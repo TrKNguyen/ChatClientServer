@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MinaTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MinaTimeServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TimeServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientSessionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MinaTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MinaTimeServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TimeServerHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="Add to Github" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,11 +67,23 @@
       <updated>1676368130282</updated>
       <workItem from="1676368131789" duration="4217000" />
       <workItem from="1676381201434" duration="5852000" />
-      <workItem from="1676450281367" duration="631000" />
+      <workItem from="1676450281367" duration="979000" />
     </task>
+    <task id="LOCAL-00001" summary="Add to Github">
+      <created>1676451230817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451230817</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add to Github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add to Github" />
   </component>
 </project>
