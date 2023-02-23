@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="Add to Github" />
+    <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="Add to Github">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/client2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLCodecFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/object/MessageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/server/MinaTimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/server/TimeServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/DateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/ClientSessionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MinaTimeServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TimeServerHandler.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +37,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="63e5ce55-fb6b-4751-817d-8e6f24301fdf" />
+        <option name="url" value="https://github.com/TrKNguyen/ChatClientServer.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,6 +59,9 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LiyJfjuA9ehK3BiKdcThJW5Jch" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -41,6 +73,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -55,8 +91,18 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +113,26 @@
       <updated>1676368130282</updated>
       <workItem from="1676368131789" duration="4217000" />
       <workItem from="1676381201434" duration="5852000" />
-      <workItem from="1676450281367" duration="979000" />
+      <workItem from="1676450281367" duration="15585000" />
+      <workItem from="1676529183416" duration="7748000" />
+      <workItem from="1676555952012" duration="1199000" />
+      <workItem from="1676597624088" duration="1209000" />
+      <workItem from="1676624926642" duration="2973000" />
+      <workItem from="1676756642629" duration="4112000" />
+      <workItem from="1676771117652" duration="1820000" />
+      <workItem from="1676809357490" duration="1478000" />
+      <workItem from="1676825031504" duration="3565000" />
+      <workItem from="1676855261164" duration="1403000" />
+      <workItem from="1676876350707" duration="2393000" />
+      <workItem from="1676906470327" duration="1447000" />
+      <workItem from="1676948528063" duration="2502000" />
+      <workItem from="1676970737974" duration="1836000" />
+      <workItem from="1676986363962" duration="1587000" />
+      <workItem from="1677036036359" duration="1898000" />
+      <workItem from="1677055176424" duration="18278000" />
+      <workItem from="1677111422068" duration="1784000" />
+      <workItem from="1677121964562" duration="4955000" />
+      <workItem from="1677135563221" duration="6325000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Github">
       <created>1676451230817</created>
@@ -76,14 +141,49 @@
       <option name="project" value="LOCAL" />
       <updated>1676451230817</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add to Github">
+      <created>1676451306009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451306009</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add to Github">
+      <created>1676451314899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451314899</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add to Github" />
     <option name="LAST_COMMIT_MESSAGE" value="Add to Github" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.SocketException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
