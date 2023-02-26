@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="Add to Github">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/ClientSessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/ClientSessionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLCodecFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLCodecFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/object/MessageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/object/MessageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/MinaTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/MinaTimeServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/TimeServerHandler.java" afterDir="false" />
     </list>
@@ -127,7 +131,7 @@
       <workItem from="1677204423779" duration="3287000" />
       <workItem from="1677229867667" duration="626000" />
       <workItem from="1677318170474" duration="447000" />
-      <workItem from="1677404541202" duration="1907000" />
+      <workItem from="1677404541202" duration="2421000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Github">
       <created>1676451230817</created>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677148960292</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add to Github">
+      <created>1677419834033</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677419834033</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
