@@ -53,12 +53,12 @@ public class TimeServerHandler extends IoHandlerAdapter {
     @Override
     public void messageReceived(IoSession session, Object message) throws Exception {
 
-        String str = message.toString();
-        if (str.trim().equalsIgnoreCase("quit")) {
+        String messageString = message.toString();
+        if (messageString.trim().equalsIgnoreCase("quit")) {
             session.close();
             return;
         }
-        if (str.equals("Get the local list")) {
+        if (messageString.equals("Get the local list")) {
             for (IoSession p : IoSessions) {
                 session.write(p.getId() + "\n");
             }
@@ -69,19 +69,19 @@ public class TimeServerHandler extends IoHandlerAdapter {
             session.write(date.toString() + "\n");
             for (IoSession p : IoSessions) {
                 if (p.getId() != session.getId()) {
-                    p.write("Session " + session.getId() + " write: " + str);
+                    p.write("Session " + session.getId() + " write: " + messageString);
                 }
             }
             System.out.println(session.getId() + " " +
-                    session.getLocalAddress() + " write a message: " + str);
+                    session.getLocalAddress() + " write a message: " + messageString);
         } else {
-            MessageObject now = (MessageObject) (message);
+            MessageObject objectMessage = (MessageObject) (message);
             System.out.println(session.getId() + " " +
                     session.getLocalAddress() + " write a MessageObject: ");
-            System.out.println("Sender :" + now.sender);
-            System.out.println("Receiver :" + now.receiver);
-            System.out.println("Time :" + now.time);
-            System.out.println("Content :" + now.content);
+            System.out.println("Sender :" + objectMessage.sender);
+            System.out.println("Receiver :" + objectMessage.receiver);
+            System.out.println("Time :" + objectMessage.time);
+            System.out.println("Content :" + objectMessage.content);
         }
     }
 
@@ -99,14 +99,14 @@ public class TimeServerHandler extends IoHandlerAdapter {
 
     /**
      * check the limit connection of this ID and check it is in the list of valid ID
-     * @param s
+     * @param IP
      * @return
      * @throws
      */
-    Boolean chkValidIP(String s) {
-        if (validIP.get(s) != null && validIP.get(s) != 0) {
-            int t = validIP.get(s) - 1;
-            validIP.put(s, t);
+    Boolean chkValidIP(String IP) {
+        if (validIP.get(IP) != null && validIP.get(IP) != 0) {
+            int numberConection = validIP.get(IP) - 1;
+            validIP.put(IP, numberConection);
             return true;
         }
         return false;
@@ -120,14 +120,14 @@ public class TimeServerHandler extends IoHandlerAdapter {
     @Override
     public void sessionCreated(IoSession session) throws Exception {
         // get IP of session.RemoteAddress
-        String s = (session.getRemoteAddress()).toString();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ':') {
-                s = s.substring(1, i);
+        String remoteAddress = (session.getRemoteAddress()).toString();
+        for (int i = 0; i < remoteAddress.length(); i++) {
+            if (remoteAddress.charAt(i) == ':') {
+                remoteAddress = remoteAddress.substring(1, i);
                 break;
             }
         }
-        if (chkValidIP(s)) {
+        if (chkValidIP(remoteAddress)) {
             System.out.println("sessionCreated: " + session.getId() + " "
                     + session.getRemoteAddress().toString());
         } else {
