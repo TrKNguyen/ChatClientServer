@@ -13,6 +13,10 @@ import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
 /**
  * @author TranKhoiNguyen
  */
+/**
+ * this class implements a server connects to clients
+ * to send and receive messages
+ */
 public class MinaTimeServer {
     private static final int PORT = 1910;
 
@@ -21,7 +25,8 @@ public class MinaTimeServer {
         // createAcceptor
         IoAcceptor acceptor = new NioSocketAcceptor();
         // setFilter
-        acceptor.getFilterChain().addLast("logger", new LoggingFilter("TCPServer"));
+        acceptor.getFilterChain().addLast("logger",
+                new LoggingFilter("TCPServer"));
         acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new XMLCodecFactory()));
         // setHandler
         TimeServerHandler serverHandler = new TimeServerHandler();
@@ -36,14 +41,14 @@ public class MinaTimeServer {
         System.out.println("Print out the valid IP:");
         Scanner in = new Scanner(System.in);
         System.out.print("Number of valid IP: ");
-        int n = in.nextInt();
-        String s = in.nextLine();
-        for (int i = 1; i <= n; i++) {
+        int numberValidIP = in.nextInt();
+        String validIP = in.nextLine();
+        for (int i = 1; i <= numberValidIP; i++) {
             System.out.print("IP: ");
-            s = in.nextLine();
+            validIP = in.nextLine();
             System.out.print("limitConnect: ");
             int limitConnect = in.nextInt();
-            serverHandler.addUpValidIP(s, limitConnect);
+            serverHandler.addUpValidIP(validIP, limitConnect);
         }
 
     }

@@ -9,6 +9,7 @@ import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 import java.io.ByteArrayInputStream;
 import java.io.ObjectInputStream;
 /**
+ * decode message
  * @author TranKhoiNguyen
  */
 public class XMLDecoder implements ProtocolDecoder {
@@ -25,8 +26,8 @@ public class XMLDecoder implements ProtocolDecoder {
         byte[] bytes = new byte[ioBuffer.remaining()];
         ioBuffer.get(bytes);
         try {
-            MessageObject now = (MessageObject) (this.deserialize(bytes));
-            protocolDecoderOutput.write(now);
+            MessageObject messageObject = (MessageObject) (this.deserialize(bytes));
+            protocolDecoderOutput.write(messageObject);
             return;
         } catch (Exception e) {
 

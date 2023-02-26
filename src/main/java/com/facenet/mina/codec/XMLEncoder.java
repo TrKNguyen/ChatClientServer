@@ -9,6 +9,7 @@ import org.apache.mina.filter.codec.ProtocolEncoderOutput;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 /**
+ * endode message
  * @author TranKhoiNguyen
  */
 public class XMLEncoder implements ProtocolEncoder {

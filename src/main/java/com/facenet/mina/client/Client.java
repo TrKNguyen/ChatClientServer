@@ -16,7 +16,11 @@ import java.net.InetSocketAddress;
 /**
  * @author TranKhoiNguyen
  */
-public class client {
+/**
+ * this class implements a chat client that connects to the server
+ * to send and receive messages
+ */
+public class Client {
     private static final String HOSTNAME = "127.0.0.1";
     private static final int PORT = 1910;
     private static final long CONNECT_TIMEOUT = 30 * 1000L; // 30 seconds
@@ -47,24 +51,25 @@ public class client {
                 Thread.sleep(5000);
             }
         }
+        // write message to server
         while (session.isActive()) {
 
             Scanner in = new Scanner(System.in);
             int type = in.nextInt();
             if (type == 1) {
                 // case 1 : String
-                String t = in.nextLine();
-                t = "";
-                int n = in.nextInt();
-                for (int i = 1; i <= n; i++) {
-                    String s = in.nextLine();
-                    if (t.isEmpty()) t = s;
-                    else t = t + " " + s;
+                String message = in.nextLine();
+                message = "";
+                int numberMessage = in.nextInt();
+                for (int i = 1; i <= numberMessage; i++) {
+                    String nextMessage = in.nextLine();
+                    if (message.isEmpty()) message = nextMessage;
+                    else message = message + " " + nextMessage;
                 }
-                session.write(t);
+                session.write(message);
             } else {
                 // case 2 : Object
-                String t = in.nextLine();
+                String getEmptyLine = in.nextLine();
                 String sender = in.nextLine();
                 String receiver = in.nextLine();
                 String time = in.nextLine();

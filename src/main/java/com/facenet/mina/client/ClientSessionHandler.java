@@ -11,6 +11,9 @@ import java.util.Date;
 /**
  * @author TranKhoiNguyen
  */
+/**
+ * this class implements a handler for client
+ */
 public class ClientSessionHandler extends IoHandlerAdapter {
     private final static Logger LOGGER = LoggerFactory.getLogger(ClientSessionHandler.class);
     private boolean finished;
@@ -44,16 +47,13 @@ public class ClientSessionHandler extends IoHandlerAdapter {
     }
 
     /**
+     * handle when receiving a message
      * @param session
      * @param message
      * @return
      **/
     @Override
     public void messageReceived(IoSession session, Object message) {
-
-        // server only sends ResultMessage. otherwise, we will have to identify
-        // its type using instanceof operator.
-        // ResultMessage../../../../org/apache/mina/example/sumup/message/ResultMessage.html#ResultMessage">
         String str = message.toString();
         if (str.trim().equalsIgnoreCase("quit")) {
             session.close();

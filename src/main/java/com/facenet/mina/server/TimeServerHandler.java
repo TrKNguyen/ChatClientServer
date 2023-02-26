@@ -11,6 +11,9 @@ import org.example.DateResponse;
 /**
  * @author TranKhoiNguyen
  */
+/**
+ * this class implements a handler for sever
+ */
 public class TimeServerHandler extends IoHandlerAdapter {
     private Map<String, Integer> validIP = new HashMap<String, Integer>();
     private Set<IoSession> IoSessions = new HashSet<IoSession>();
@@ -69,10 +72,12 @@ public class TimeServerHandler extends IoHandlerAdapter {
                     p.write("Session " + session.getId() + " write: " + str);
                 }
             }
-            System.out.println(session.getId() + " " + session.getLocalAddress() + " write a message: " + str);
+            System.out.println(session.getId() + " " +
+                    session.getLocalAddress() + " write a message: " + str);
         } else {
             MessageObject now = (MessageObject) (message);
-            System.out.println(session.getId() + " " + session.getLocalAddress() + " write a MessageObject: ");
+            System.out.println(session.getId() + " " +
+                    session.getLocalAddress() + " write a MessageObject: ");
             System.out.println("Sender :" + now.sender);
             System.out.println("Receiver :" + now.receiver);
             System.out.println("Time :" + now.time);
@@ -93,6 +98,7 @@ public class TimeServerHandler extends IoHandlerAdapter {
     }
 
     /**
+     * check the limit connection of this ID and check it is in the list of valid ID
      * @param s
      * @return
      * @throws
@@ -122,7 +128,8 @@ public class TimeServerHandler extends IoHandlerAdapter {
             }
         }
         if (chkValidIP(s)) {
-            System.out.println("sessionCreated: " + session.getId() + " " + session.getRemoteAddress().toString());
+            System.out.println("sessionCreated: " + session.getId() + " "
+                    + session.getRemoteAddress().toString());
         } else {
             session.close();
         }
@@ -136,7 +143,8 @@ public class TimeServerHandler extends IoHandlerAdapter {
     @Override
     public void sessionOpened(IoSession session) throws Exception {
         IoSessions.add(session);
-        System.out.println("Have new session: " + session.getId() + "|New SocketAddress: " + session.getLocalAddress() + " " + session.getRemoteAddress());
+        System.out.println("Have new session: " + session.getId() + "|New SocketAddress: "
+                + session.getLocalAddress() + " " + session.getRemoteAddress());
     }
 
     /**
@@ -146,7 +154,8 @@ public class TimeServerHandler extends IoHandlerAdapter {
     @Override
     public void sessionClosed(IoSession session) {
         IoSessions.remove(session);
-        System.out.println("Quite session: " + session.getId() + "|SocketAddress: " + session.getLocalAddress() + " " + session.getRemoteAddress());
+        System.out.println("Quite session: " + session.getId() + "|SocketAddress: "
+                + session.getLocalAddress() + " " + session.getRemoteAddress());
     }
 
 

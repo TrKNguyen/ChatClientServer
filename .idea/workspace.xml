@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="018616ff-6f08-4878-8fe5-ede4d52e8cf5" name="Changes" comment="Add to Github">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/client2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLCodecFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/codec/XMLEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/object/MessageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/server/MinaTimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/server/TimeServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/DateResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/facenet/mina/client/ClientSessionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MinaTimeServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TimeServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/client/Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/codec/XMLDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/MinaTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/MinaTimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facenet/mina/server/TimeServerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +123,11 @@
       <workItem from="1677055176424" duration="18278000" />
       <workItem from="1677111422068" duration="1784000" />
       <workItem from="1677121964562" duration="4955000" />
-      <workItem from="1677135563221" duration="6325000" />
+      <workItem from="1677135563221" duration="7452000" />
+      <workItem from="1677204423779" duration="3287000" />
+      <workItem from="1677229867667" duration="626000" />
+      <workItem from="1677318170474" duration="447000" />
+      <workItem from="1677404541202" duration="1907000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Github">
       <created>1676451230817</created>
@@ -155,7 +150,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676451314899</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add to Github">
+      <created>1677148471595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677148471606</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add to Github">
+      <created>1677148648913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677148648913</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add to Github">
+      <created>1677148700924</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677148700924</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add to Github">
+      <created>1677148960292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677148960292</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

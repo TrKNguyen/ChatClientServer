@@ -1,5 +1,6 @@
 package com.facenet.mina.object;
 /**
+ * implements serializable message data object
  * @author TranKhoiNguyen
  */
 public class MessageObject extends java.lang.Object implements java.io.Serializable {
